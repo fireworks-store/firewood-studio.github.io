@@ -1,0 +1,134 @@
+---
+permalink: "/index.html"
+
+---
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Silex v3.10.0">
+<link rel="stylesheet" href="/css/index-26275aa3c65b2f8a7ab544487bc4be2d5ea152edd740c2794fe1b9bb67d951fa.css" />
+
+<style>
+
+
+.firewood-glass {
+    background: linear-gradient(
+        135deg,
+        rgba(220, 255, 230, 0.18),
+        rgba(100, 160, 120, 0.07)
+    );
+
+    border: 1px solid rgba(230, 255, 235, 0.35);
+    border-radius: 20px;
+
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+
+    box-shadow:
+        0 8px 35px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.35);
+
+    padding: 25px;
+    color: white;
+}
+
+
+</style>
+
+
+
+
+
+<link href="https://fonts.googleapis.com" rel="preconnect" ><link href="https://fonts.googleapis.com/css2" rel="preconnect" crossorigin ><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:ital,wght@0,400&display=swap" rel="stylesheet" ></head>
+<body id="ia9f"><div id="i73ua"></div><div id="im3aj" class="silex-default-container"><img id="ijk0n" src="/assets/FireWoodStudio_site.png"/>
+<div id="fw-test-menu">
+  <button id="fw-test-button">☰</button>
+
+  <div id="fw-test-panel">
+    <button id="fw-test-close">×</button>
+    <h2>FireWood Studio</h2>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<style>
+#fw-test-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999999;
+  background: #203c2b;
+  color: white;
+  border: 1px solid #75947c;
+  border-radius: 12px;
+  padding: 12px 17px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#fw-test-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 30px;
+  background: rgba(20, 40, 28, 0.96);
+  color: white;
+  z-index: 1000000;
+  transform: translateX(110%);
+  transition: transform .35s ease;
+}
+
+#fw-test-panel.open {
+  transform: translateX(0);
+}
+
+#fw-test-panel a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 10px;
+  background: rgba(255,255,255,.1);
+  border-radius: 10px;
+}
+
+#fw-test-close {
+  float: right;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+const fwButton = document.getElementById("fw-test-button");
+const fwPanel = document.getElementById("fw-test-panel");
+const fwClose = document.getElementById("fw-test-close");
+
+fwButton.addEventListener("click", () => {
+  fwPanel.classList.add("open");
+});
+
+fwClose.addEventListener("click", () => {
+  fwPanel.classList.remove("open");
+});
+
+fwPanel.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    fwPanel.classList.remove("open");
+  });
+});
+</script>
+</div><div id="i3czg" class="silex-default-container firewood-glass"><div id="ihfek" class="silex-default-text"><p id="iuy03"><span id="ir1sj">Independent Game Development Studio</span><span draggable="true">.<br/></span>Creating original games and developing new ideas.</p><p>FireWood Studio focuses on building unique gaming experiences, exploring creative concepts, and bringing original projects to life. We value innovation, technical development, optimization, and attention to detail.</p><p>Our goal is to create memorable games with their own atmosphere, identity, and gameplay.</p></div></div><form method="get" id="isjqh"></form><div class="silex-default-container"></div></body>
+</html>

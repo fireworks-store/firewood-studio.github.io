@@ -67,7 +67,19 @@
     }
   ],
   "pagesFolder": "pages",
-  "publication": {},
+  "publication": {
+    "connector": {
+      "background": "rgba(252, 109, 38, 0.2)",
+      "color": "#2B1B63",
+      "connectorId": "gitlab",
+      "disableLogout": false,
+      "displayName": "GitLab.com",
+      "icon": "/assets/gitlab.png",
+      "isLoggedIn": true,
+      "oauthUrl": null,
+      "type": "HOSTING"
+    }
+  },
   "settings": {
     "head": "\n<style>\n\n\n.firewood-glass {\n    background: linear-gradient(\n        135deg,\n        rgba(220, 255, 230, 0.18),\n        rgba(100, 160, 120, 0.07)\n    );\n\n    border: 1px solid rgba(230, 255, 235, 0.35);\n    border-radius: 20px;\n\n    backdrop-filter: blur(25px) saturate(180%);\n    -webkit-backdrop-filter: blur(25px) saturate(180%);\n\n    box-shadow:\n        0 8px 35px rgba(0, 0, 0, 0.3),\n        inset 0 1px 2px rgba(255, 255, 255, 0.35);\n\n    padding: 25px;\n    color: white;\n}\n \n  \n.projects-container {\n    width: 90%;\n    max-width: 1100px;\n    margin-left: auto;\n  \tmargin-right: auto;\n \tmargin-bottom: 49px;\n    padding-left: 49px;\n    padding-right: 49px;\n}\n\n  \n/* Плавное появление элементов сайта */\n@keyframes fadeInUp {\n    from {\n        opacity: 0;\n        transform: translateY(20px);\n    }\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\nbody * {\n    animation: fadeInUp 0.7s ease-out both;\n}\n\n  \n</style>\n"
   },

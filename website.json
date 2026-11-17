@@ -394,7 +394,7 @@
         "right": "0px",
         "top": "0px",
         "width": "1484px",
-        "z-index": "9999"
+        "z-index": "1301"
       }
     },
     {
@@ -1281,6 +1281,14 @@
       "style": {
         "height": "99px",
         "width": "558px"
+      }
+    },
+    {
+      "selectors": [
+        "#iufmn5-2"
+      ],
+      "style": {
+        "z-index": "6089"
       }
     }
   ],

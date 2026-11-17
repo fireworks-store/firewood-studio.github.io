@@ -222,7 +222,7 @@
         "inset": "0",
         "opacity": "0",
         "position": "fixed",
-        "transition": ".3s",
+        "transition": "opacity .3s, visibility .3s",
         "visibility": "hidden",
         "z-index": "10000"
       }
@@ -241,15 +241,16 @@
         "display": "flex",
         "flex-direction": "column",
         "gap": "24px",
-        "height": "100vh",
+        "height": "100dvh",
         "max-width": "85vw",
         "padding": "100px 25px 25px",
         "position": "fixed",
         "right": "0",
         "top": "0",
         "transform": "translateX(100%)",
-        "transition": "transform .35s ease",
-        "width": "280px",
+        "transition": "transform .35s ease, visibility .35s",
+        "visibility": "hidden",
+        "width": "min(280px, 85vw)",
         "z-index": "10001"
       }
     },
@@ -1119,7 +1120,7 @@
       "style": {
         "align-items": "center",
         "background": "#171717",
-        "border": "0",
+        "border": "none",
         "border-radius": "8px",
         "cursor": "pointer",
         "display": "flex",
@@ -1127,7 +1128,10 @@
         "gap": "6px",
         "height": "48px",
         "justify-content": "center",
-        "position": "relative",
+        "padding": "0",
+        "position": "fixed",
+        "right": "20px",
+        "top": "20px",
         "width": "48px",
         "z-index": "10002"
       }
@@ -1137,8 +1141,9 @@
       "selectorsAdd": ".fw-menu-toggle span",
       "style": {
         "background": "white",
+        "display": "block",
         "height": "2px",
-        "transition": ".3s",
+        "transition": "transform .3s, opacity .3s",
         "width": "23px"
       }
     },
@@ -1169,7 +1174,8 @@
         "open"
       ],
       "style": {
-        "transform": "translateX(0)"
+        "transform": "translateX(0)",
+        "visibility": "visible"
       }
     },
     {
@@ -1196,6 +1202,17 @@
       "style": {
         "opacity": "1",
         "visibility": "visible"
+      }
+    },
+    {
+      "atRuleType": "media",
+      "mediaText": "(max-width: 600px)",
+      "selectors": [
+        "fw-menu-toggle"
+      ],
+      "style": {
+        "right": "15px",
+        "top": "15px"
       }
     }
   ],

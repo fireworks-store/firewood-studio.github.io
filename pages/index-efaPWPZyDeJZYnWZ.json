@@ -45,7 +45,7 @@
           },
           {
             "attributes": {
-              "id": "i3czg"
+              "id": "iiff2u"
             },
             "classes": [
               "silex-default-container",
@@ -55,7 +55,7 @@
             "components": [
               {
                 "attributes": {
-                  "id": "ihfek"
+                  "id": "idowjo"
                 },
                 "classes": [
                   "silex-default-text"
@@ -80,23 +80,6 @@
                         "type": "text"
                       },
                       {
-                        "attributes": {
-                          "draggable": "true"
-                        },
-                        "components": [
-                          {
-                            "content": ".",
-                            "type": "textnode"
-                          },
-                          {
-                            "tagName": "br",
-                            "void": true
-                          }
-                        ],
-                        "tagName": "span",
-                        "type": "text"
-                      },
-                      {
                         "content": "Creating original games and developing new ideas.",
                         "type": "textnode"
                       }
@@ -105,6 +88,9 @@
                     "type": "text"
                   },
                   {
+                    "attributes": {
+                      "id": "ix8h8w"
+                    },
                     "components": [
                       {
                         "content": "FireWood Studio focuses on building unique gaming experiences, exploring creative concepts, and bringing original projects to life. We value innovation, technical development, optimization, and attention to detail.",
@@ -115,6 +101,9 @@
                     "type": "text"
                   },
                   {
+                    "attributes": {
+                      "id": "ixu7qc"
+                    },
                     "components": [
                       {
                         "content": "Our goal is to create memorable games with their own atmosphere, identity, and gameplay.",
@@ -135,7 +124,7 @@
                   {
                     "active": false,
                     "type": "id",
-                    "value": "i3czg"
+                    "value": "iiff2u"
                   },
                   {
                     "active": false,
@@ -148,7 +137,7 @@
                     "value": "firewood-glass"
                   },
                   {
-                    "active": false,
+                    "active": true,
                     "type": "class",
                     "value": "projects-container"
                   }
@@ -159,14 +148,7 @@
           },
           {
             "attributes": {
-              "id": "isjqh",
-              "method": "get"
-            },
-            "type": "form"
-          },
-          {
-            "attributes": {
-              "id": "ikqwuh-2"
+              "id": "iklx5k"
             },
             "classes": [
               "silex-default-container",
@@ -177,7 +159,7 @@
               {
                 "attributes": {
                   "href": "./firewoodstudioprojects.html",
-                  "id": "iryntp-3-2-2-2"
+                  "id": "irk0tj"
                 },
                 "classes": [
                   "silex-default-container",
@@ -186,21 +168,55 @@
                 "components": [
                   {
                     "attributes": {
-                      "id": "i5bdgc-2",
-                      "src": "/assets/FireTimeClassic03.webp"
+                      "id": "imirni"
                     },
-                    "type": "image"
+                    "classes": [
+                      "silex-default-container",
+                      "firewood-glass"
+                    ],
+                    "components": [
+                      {
+                        "attributes": {
+                          "id": "i4dskk",
+                          "src": "/assets/FireTimeClassic03.webp"
+                        },
+                        "type": "image"
+                      }
+                    ],
+                    "selector": {
+                      "mainSelector": {
+                        "pseudoClass": null,
+                        "selectors": [
+                          {
+                            "active": true,
+                            "type": "id",
+                            "value": "imirni"
+                          },
+                          {
+                            "active": false,
+                            "type": "class",
+                            "value": "silex-default-container"
+                          },
+                          {
+                            "active": true,
+                            "type": "class",
+                            "value": "firewood-glass"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "container"
                   },
                   {
                     "attributes": {
-                      "id": "ig9n18"
+                      "id": "ip4oha"
                     },
                     "classes": [
                       "silex-default-text"
                     ],
                     "components": [
                       {
-                        "content": "FireTime Classic",
+                        "content": "FireTime next global update",
                         "type": "textnode"
                       },
                       {
@@ -208,7 +224,47 @@
                         "void": true
                       },
                       {
-                        "content": "GLobal Update 1.1.0!",
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "- New mechanics",
+                        "type": "textnode"
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "- New PGL 7.0",
+                        "type": "textnode"
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "- FireTime Map Editor",
+                        "type": "textnode"
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "- And more",
                         "type": "textnode"
                       }
                     ],
@@ -221,9 +277,9 @@
                     "pseudoClass": null,
                     "selectors": [
                       {
-                        "active": false,
+                        "active": true,
                         "type": "id",
-                        "value": "iryntp"
+                        "value": "irk0tj"
                       },
                       {
                         "active": false,
@@ -231,7 +287,7 @@
                         "value": "silex-default-container"
                       },
                       {
-                        "active": true,
+                        "active": false,
                         "type": "class",
                         "value": "firewood-glass"
                       }
@@ -243,8 +299,8 @@
               },
               {
                 "attributes": {
-                  "href": "./firewoodstudioprojects.html",
-                  "id": "iryntp-3-2-2-2-3"
+                  "href": "./firetimemapeditor.html",
+                  "id": "irk0tj-49"
                 },
                 "classes": [
                   "silex-default-container",
@@ -253,21 +309,55 @@
                 "components": [
                   {
                     "attributes": {
-                      "id": "i5bdgc-2-3",
-                      "src": "/assets/MapEditor1.0.1.webp"
+                      "id": "imirni-2"
                     },
-                    "type": "image"
+                    "classes": [
+                      "silex-default-container",
+                      "firewood-glass"
+                    ],
+                    "components": [
+                      {
+                        "attributes": {
+                          "id": "i4dskk-2",
+                          "src": "/assets/MapEditor1.0.1.webp"
+                        },
+                        "type": "image"
+                      }
+                    ],
+                    "selector": {
+                      "mainSelector": {
+                        "pseudoClass": null,
+                        "selectors": [
+                          {
+                            "active": true,
+                            "type": "id",
+                            "value": "imirni"
+                          },
+                          {
+                            "active": false,
+                            "type": "class",
+                            "value": "silex-default-container"
+                          },
+                          {
+                            "active": true,
+                            "type": "class",
+                            "value": "firewood-glass"
+                          }
+                        ]
+                      }
+                    },
+                    "type": "container"
                   },
                   {
                     "attributes": {
-                      "id": "ig9n18-2"
+                      "id": "ibixwi"
                     },
                     "classes": [
                       "silex-default-text"
                     ],
                     "components": [
                       {
-                        "content": "FireTime MapEditor",
+                        "content": "New FireTime Map Editor On FireTime Classic!",
                         "type": "textnode"
                       },
                       {
@@ -275,7 +365,19 @@
                         "void": true
                       },
                       {
-                        "content": "Beta Version",
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "FireTime Map Editor 1.0.1",
+                        "type": "textnode"
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "User Guide & Tips",
                         "type": "textnode"
                       }
                     ],
@@ -285,12 +387,11 @@
                 "originalTagName": "div",
                 "selector": {
                   "mainSelector": {
-                    "pseudoClass": null,
                     "selectors": [
                       {
                         "active": false,
                         "type": "id",
-                        "value": "iryntp"
+                        "value": "irk0tj-2"
                       },
                       {
                         "active": false,
@@ -298,14 +399,28 @@
                         "value": "silex-default-container"
                       },
                       {
-                        "active": true,
+                        "active": false,
                         "type": "class",
                         "value": "firewood-glass"
+                      },
+                      {
+                        "active": true,
+                        "type": "id",
+                        "value": "irk0tj-49"
                       }
                     ]
                   }
                 },
                 "tagName": "A",
+                "type": "container"
+              },
+              {
+                "attributes": {
+                  "id": "i1qxar"
+                },
+                "classes": [
+                  "silex-default-container"
+                ],
                 "type": "container"
               }
             ],
@@ -316,7 +431,7 @@
                   {
                     "active": false,
                     "type": "id",
-                    "value": "ikqwuh"
+                    "value": "iklx5k"
                   },
                   {
                     "active": false,

@@ -88,7 +88,7 @@
     }
   },
   "settings": {
-    "head": "\n<style>\n\n\n.firewood-glass {\n    background: linear-gradient(\n        135deg,\n        rgba(220, 255, 230, 0.18),\n        rgba(100, 160, 120, 0.07)\n    );\n\n    border: 1px solid rgba(230, 255, 235, 0.35);\n    border-radius: 20px;\n\n    backdrop-filter: blur(25px) saturate(180%);\n    -webkit-backdrop-filter: blur(25px) saturate(180%);\n\n    box-shadow:\n        0 8px 35px rgba(0, 0, 0, 0.3),\n        inset 0 1px 2px rgba(255, 255, 255, 0.35);\n\n    padding: 10px;\n    color: white;\n}\n \n  \n.projects-container {\n    width: 90%;\n    max-width: 1100px;\n    margin-left: auto;\n  \tmargin-right: auto;\n \tmargin-bottom: 49px;\n    padding-left: 49px;\n    padding-right: 49px;\n}\n\n  \n/* Плавное появление элементов сайта */\n@keyframes fadeInUp {\n    from {\n        opacity: 0;\n        transform: translateY(20px);\n    }\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\nbody * {\n    animation: fadeInUp 0.7s ease-out both;\n}\n\n  \n</style>\n"
+    "head": "\n<style>\n\n\n.firewood-glass {\n    background: linear-gradient(\n        135deg,\n        rgba(220, 255, 230, 0.18),\n        rgba(100, 160, 120, 0.07)\n    );\n\n    border: 1px solid rgba(230, 255, 235, 0.35);\n    border-radius: 20px;\n\n    backdrop-filter: blur(25px) saturate(180%);\n    -webkit-backdrop-filter: blur(25px) saturate(180%);\n\n    box-shadow:\n        0 8px 35px rgba(0, 0, 0, 0.3),\n        inset 0 1px 2px rgba(255, 255, 255, 0.35);\n\n    padding: 10px;\n    color: white;\n}\n \n  \n.projects-container {\n    width: 90%;\n    max-width: 1100px;\n    margin-left: auto;\n  \tmargin-right: auto;\n \tmargin-bottom: 49px;\n    padding-left: 49px;\n    padding-right: 49px;\n}\n/* Global animation */\n@keyframes fadeInUp {\n    from {\n        opacity: 0;\n        transform: translateY(20px);\n    }\n\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\n/* Animate website elements, excluding the menu */\nbody *:not(.fw-menu):not(.fw-menu *) {\n    animation: fadeInUp 0.7s ease-out backwards;\n}\n\n/* Hamburger animation is controlled separately */\n.fw-menu,\n.fw-menu * {\n    animation: none;\n}</style>\n"
   },
   "styles": [
     {
@@ -389,11 +389,11 @@
         "#iwu7cx"
       ],
       "style": {
-        "height": "220px",
+        "height": "189px",
         "left": "0px",
         "right": "0px",
         "top": "0px",
-        "width": "1881px",
+        "width": "1484px",
         "z-index": "9999"
       }
     },
@@ -736,8 +736,8 @@
         "#i4dskk-2"
       ],
       "style": {
-        "height": "90px",
-        "width": "172px"
+        "height": "92px",
+        "width": "176px"
       }
     },
     {
@@ -810,6 +810,11 @@
         "#ibixwi"
       ],
       "style": {
+        "align-content": "center",
+        "align-items": "center",
+        "align-self": "center",
+        "font-size": "-35px",
+        "justify-content": "center",
         "width": "169px"
       }
     },

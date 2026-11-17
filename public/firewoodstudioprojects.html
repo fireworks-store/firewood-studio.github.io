@@ -9,7 +9,7 @@ collection: "FireWoodStudioProjects"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Silex v3.10.0">
-<link rel="stylesheet" href="/css/firewoodstudioprojects-32f3140a4849a4632e7aadfb8fc309827dddab8a3d5ce6b985f2f4447795dd1b.css" />
+<link rel="stylesheet" href="/css/firewoodstudioprojects-56b9c2637b887577e7ab93bbc8ff298179d0527040aeaf10ca0587d363347644.css" />
 
 <style>
 
@@ -45,26 +45,29 @@ collection: "FireWoodStudioProjects"
     padding-left: 49px;
     padding-right: 49px;
 }
-
-  
-/* Плавное появление элементов сайта */
+/* Global animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-body * {
-    animation: fadeInUp 0.7s ease-out both;
+/* Animate website elements, excluding the menu */
+body *:not(.fw-menu):not(.fw-menu *) {
+    animation: fadeInUp 0.7s ease-out backwards;
 }
 
-  
-</style>
+/* Hamburger animation is controlled separately */
+.fw-menu,
+.fw-menu * {
+    animation: none;
+}</style>
 
 
 <title>FireWoodStudioProjects</title>

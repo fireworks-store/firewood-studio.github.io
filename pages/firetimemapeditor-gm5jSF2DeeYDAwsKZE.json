@@ -74,7 +74,7 @@
           },
           {
             "attributes": {
-              "id": "iufkn-49"
+              "id": "iufkn-48"
             },
             "classes": [
               "silex-default-container",
@@ -88,15 +88,111 @@
                   "src": "/assets/Снимок экрана 2026-11-16 213250.webp"
                 },
                 "type": "image"
+              },
+              {
+                "attributes": {
+                  "id": "icuicx"
+                },
+                "classes": [
+                  "silex-default-text"
+                ],
+                "components": [
+                  {
+                    "content": "Добро пожаловать в руководство по FireTime Map Editor",
+                    "type": "textnode"
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  },
+                  {
+                    "content": "В нём я вам расскажу как правильно пользоваться редактором карт и какие возможности он имеет",
+                    "type": "textnode"
+                  }
+                ],
+                "type": "text"
+              },
+              {
+                "attributes": {
+                  "id": "i2js8g"
+                },
+                "classes": [
+                  "silex-default-text"
+                ],
+                "components": [
+                  {
+                    "content": "FireTime Map Editor v1.0.1",
+                    "type": "textnode"
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  }
+                ],
+                "type": "text"
+              },
+              {
+                "attributes": {
+                  "id": "i7iuvn"
+                },
+                "classes": [
+                  "silex-default-text"
+                ],
+                "components": [
+                  {
+                    "content": "Когда вы заходите в редактор карт вас встречает костёр и игрок, также у вас будет выбран инструмент карандаша, с ним вы как раз таки и можете поставить дерево или заброшенное здание",
+                    "type": "textnode"
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  },
+                  {
+                    "content": "Чтобы поставить объект используйте левую кнопку мыши",
+                    "type": "textnode"
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  },
+                  {
+                    "content": "Для перемещения камеры используйте кнопки WASD",
+                    "type": "textnode"
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  },
+                  {
+                    "content": "Для смены инструмента используйте стрелки влево и вправо",
+                    "type": "textnode"
+                  },
+                  {
+                    "tagName": "br",
+                    "void": true
+                  },
+                  {
+                    "content": "Самое важное, костёр удалять можно но без него игру вы не запустите, так как редактор не даст этого сделать, как же вы будете бегать по лесу без костра? Верно?",
+                    "type": "textnode"
+                  }
+                ],
+                "type": "text"
               }
             ],
             "selector": {
-              "atRule": "@media (max-width: 480px)",
+              "atRule": "@media (max-width: 768px)",
               "mainSelector": {
-                "pseudoClass": null,
                 "selectors": [
                   {
-                    "active": true,
+                    "active": false,
                     "type": "id",
                     "value": "iufkn-49"
                   },
@@ -111,9 +207,14 @@
                     "value": "firewood-glass"
                   },
                   {
-                    "active": true,
+                    "active": false,
                     "type": "class",
                     "value": "projects-container"
+                  },
+                  {
+                    "active": true,
+                    "type": "id",
+                    "value": "iufkn-48"
                   }
                 ]
               }

@@ -27,10 +27,13 @@
           },
           {
             "attributes": {
-              "id": "iufmn5-2"
+              "id": "iufmn5-2-2"
             },
             "components": [
               {
+                "attributes": {
+                  "id": "irob-2"
+                },
                 "classes": [
                   "fw-menu"
                 ],
@@ -39,6 +42,7 @@
                     "attributes": {
                       "aria-expanded": "false",
                       "aria-label": "Open menu",
+                      "id": "ihxr-2",
                       "type": "button"
                     },
                     "classes": [
@@ -53,6 +57,9 @@
                     "type": "button"
                   },
                   {
+                    "attributes": {
+                      "id": "i3qbz-2"
+                    },
                     "classes": [
                       "fw-menu-overlay"
                     ]
@@ -125,6 +132,13 @@
           },
           {
             "attributes": {
+              "id": "itzaka",
+              "src": "/assets/FireWood Studio Mobile Version.png"
+            },
+            "type": "image"
+          },
+          {
+            "attributes": {
               "id": "im3aj"
             },
             "classes": [
@@ -133,8 +147,8 @@
             "components": [
               {
                 "attributes": {
-                  "id": "iwu7cx",
-                  "src": "/assets/FireWoodStudio_site.png"
+                  "id": "i9cuq",
+                  "src": "/assets/FireWoodStudioLogo01.png"
                 },
                 "type": "image"
               }

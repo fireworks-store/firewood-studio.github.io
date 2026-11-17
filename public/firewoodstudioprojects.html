@@ -9,7 +9,7 @@ collection: "FireWoodStudioProjects"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Silex v3.10.0">
-<link rel="stylesheet" href="/css/firewoodstudioprojects-5315f7d4b9883d12946ebbad209726e5d49024a0ae3806d274390c9798a6dfdc.css" />
+<link rel="stylesheet" href="/css/firewoodstudioprojects-3bafd6cb03a9c362e66ad95f2454f05fe66acdbb082f0e93a71cca7feafa8416.css" />
 
 <style>
 
@@ -74,7 +74,177 @@ body *:not(.fw-menu):not(.fw-menu *) {
 
 
 <link href="https://fonts.googleapis.com" rel="preconnect" ><link href="https://fonts.googleapis.com/css2" rel="preconnect" crossorigin ><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P:ital,wght@0,400&display=swap" rel="stylesheet" ></head>
-<body id="i4mq2i"><div id="ikqwuh-2-2" class="silex-default-container firewood-glass projects-container"><div id="iryntp-3" class="silex-default-container firewood-glass"><img id="i5bdgc-2-2" src="/assets/FireTimeClassic03.webp"/><div id="i5fk4a" class="silex-default-text">FireTime Classic<br/>GLobal Update 1.1.0!</div></div><div id="i7eqlm" class="silex-default-text"><p id="i5q9j">Готовится новое обновление FireTime Classic Global Update 1.1.0!</p><p id="it7lg">В этом обновлении была значительно улучшена система PGL, а также её внутренний компонент исправления ошибок — PGL Manager. Теперь он работает быстрее и эффективнее удаляет лишние постройки, деревья и другие объекты, которые могут вызывать проблемы при генерации мира.</p><p id="ii2u7">Во время разработки я заметил, что некоторые сиды (Seed) вызывали повышенное количество ошибок и даже могли приводить к нестабильной работе игры. Чтобы решить эту проблему, в FireTime Classic была интегрирована новая система генерации PGL 7.0.</p><p id="isk84">А теперь самое интересное — что нового ждёт игроков?</p><p id="i0ys71">Новый режим: «Прятки»
+<body id="i4mq2i">
+<div class="fw-menu">
+  <button class="fw-menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          type="button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="fw-menu-overlay"></div>
+
+  <nav class="fw-menu-panel" aria-hidden="true">
+    <a href="/">Home</a>
+    <a href="/games/">Our Games</a>
+    <a href="/about/">About Us</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</div>
+
+<style>
+.fw-menu {
+  font-family: Arial, sans-serif;
+}
+
+/* Hamburger button */
+.fw-menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10002;
+
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+
+  background: #171717;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.fw-menu-toggle span {
+  display: block;
+  width: 23px;
+  height: 2px;
+  background: white;
+  transition: transform .3s, opacity .3s;
+}
+
+.fw-menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.fw-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.fw-menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu panel */
+.fw-menu-panel {
+  position: fixed;
+  z-index: 10001;
+  top: 0;
+  right: 0;
+
+  width: min(280px, 85vw);
+  height: 100vh;
+  height: 100dvh;
+
+  padding: 100px 25px 25px;
+  box-sizing: border-box;
+
+  background: #171717;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform .35s ease, visibility .35s;
+}
+
+.fw-menu-panel.open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.fw-menu-panel a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.fw-menu-panel a:hover {
+  color: #d69b55;
+}
+
+/* Background overlay */
+.fw-menu-overlay {
+  position: fixed;
+  z-index: 10000;
+  inset: 0;
+
+  background: rgba(0,0,0,.55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.fw-menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .fw-menu-toggle {
+    top: 15px;
+    right: 15px;
+  }
+}
+</style>
+
+<script>
+(function () {
+  document.querySelectorAll('.fw-menu').forEach(root => {
+    if (root.dataset.ready) return;
+    root.dataset.ready = 'true';
+
+    const button = root.querySelector('.fw-menu-toggle');
+    const panel = root.querySelector('.fw-menu-panel');
+    const overlay = root.querySelector('.fw-menu-overlay');
+
+    function toggleMenu(force) {
+      const isOpen = force ?? !panel.classList.contains('open');
+
+      panel.classList.toggle('open', isOpen);
+      overlay.classList.toggle('open', isOpen);
+      button.classList.toggle('active', isOpen);
+
+      button.setAttribute('aria-expanded', String(isOpen));
+      button.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      panel.setAttribute('aria-hidden', String(!isOpen));
+    }
+
+    button.addEventListener('click', () => toggleMenu());
+    overlay.addEventListener('click', () => toggleMenu(false));
+
+    panel.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => toggleMenu(false));
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') toggleMenu(false);
+    });
+  });
+})();
+</script>
+<div id="ikqwuh-2-2" class="silex-default-container firewood-glass projects-container"><div id="iryntp-3" class="silex-default-container firewood-glass"><img id="i5bdgc-2-2" src="/assets/FireTimeClassic03.webp"/><div id="i5fk4a" class="silex-default-text">FireTime Classic<br/>GLobal Update 1.1.0!</div></div><div id="i7eqlm" class="silex-default-text"><p id="i5q9j">Готовится новое обновление FireTime Classic Global Update 1.1.0!</p><p id="it7lg">В этом обновлении была значительно улучшена система PGL, а также её внутренний компонент исправления ошибок — PGL Manager. Теперь он работает быстрее и эффективнее удаляет лишние постройки, деревья и другие объекты, которые могут вызывать проблемы при генерации мира.</p><p id="ii2u7">Во время разработки я заметил, что некоторые сиды (Seed) вызывали повышенное количество ошибок и даже могли приводить к нестабильной работе игры. Чтобы решить эту проблему, в FireTime Classic была интегрирована новая система генерации PGL 7.0.</p><p id="isk84">А теперь самое интересное — что нового ждёт игроков?</p><p id="i0ys71">Новый режим: «Прятки»
 Скрывайтесь от монстра и старайтесь выжить как можно дольше. Будьте осторожны: монстр отлично слышит звуки сбора древесины и может выйти прямо на ваш след. Режим всё ещё находится в разработке и будет активно улучшаться в будущих обновлениях.</p><p>Исправление ошибок
 В игре было исправлено множество ошибок и недочётов. FireTime Classic стал стабильнее и работает лучше.</p><p>Новый загрузочный экран
 При запуске игры теперь будет воспроизводиться новая анимация загрузки.</p><p>Новая настройка: «Анимации появления»

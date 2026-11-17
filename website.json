@@ -645,6 +645,149 @@
       "style": {
         "height": "176px"
       }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 992px)",
+      "selectors": [
+        "#irk0tj"
+      ],
+      "style": {
+        "width": "569px"
+      }
+    },
+    {
+      "atRuleType": "media",
+      "mediaText": "(max-width: 992px)",
+      "selectors": [
+        "#i4dskk"
+      ],
+      "style": {
+        "height": "202px",
+        "width": "307px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 992px)",
+      "selectors": [
+        "firewood-glass"
+      ],
+      "style": {
+        "width": "666px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 992px)",
+      "selectors": [
+        "#irk0tj-49"
+      ],
+      "style": {
+        "width": "571px"
+      }
+    },
+    {
+      "atRuleType": "media",
+      "mediaText": "(max-width: 992px)",
+      "selectors": [
+        "#i4dskk-2"
+      ],
+      "style": {
+        "height": "188px",
+        "width": "335px"
+      }
+    },
+    {
+      "atRuleType": "media",
+      "mediaText": "(max-width: 480px)",
+      "selectors": [
+        "#i4dskk-2"
+      ],
+      "style": {
+        "height": "90px",
+        "width": "172px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 480px)",
+      "selectors": [
+        "projects-container"
+      ],
+      "style": {
+        "width": "295px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 480px)",
+      "selectors": [
+        "#idowjo"
+      ],
+      "style": {
+        "width": "204px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 480px)",
+      "selectors": [
+        "#irk0tj"
+      ],
+      "style": {
+        "width": "219px"
+      }
+    },
+    {
+      "atRuleType": "media",
+      "mediaText": "(max-width: 480px)",
+      "selectors": [
+        "#i4dskk"
+      ],
+      "style": {
+        "height": "94px",
+        "width": "174px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 480px)",
+      "selectors": [
+        "#irk0tj-49"
+      ],
+      "style": {
+        "width": "217px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 480px)",
+      "selectors": [
+        "#ibixwi"
+      ],
+      "style": {
+        "width": "169px"
+      }
+    },
+    {
+      "atRule": "media",
+      "atRuleType": "media",
+      "mediaText": "(max-width: 768px)",
+      "selectors": [
+        "#ibixwi"
+      ],
+      "style": {
+        "width": "387px"
+      }
     }
   ],
   "symbols": []

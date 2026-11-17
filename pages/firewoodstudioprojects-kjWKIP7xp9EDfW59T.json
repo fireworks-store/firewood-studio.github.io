@@ -1,0 +1,252 @@
+{
+  "frames": [
+    {
+      "component": {
+        "COMPONENT_NAME_PREFIX": "",
+        "attributes": {
+          "id": "i4mq2i"
+        },
+        "components": [
+          {
+            "attributes": {
+              "id": "ikqwuh-2-2"
+            },
+            "classes": [
+              "silex-default-container",
+              "firewood-glass",
+              "projects-container"
+            ],
+            "components": [
+              {
+                "attributes": {
+                  "id": "iryntp-3-2-2-2-2"
+                },
+                "classes": [
+                  "silex-default-container",
+                  "firewood-glass"
+                ],
+                "components": [
+                  {
+                    "attributes": {
+                      "id": "i5bdgc-2-2",
+                      "src": "/assets/FireTimeClassic03.webp"
+                    },
+                    "type": "image"
+                  },
+                  {
+                    "attributes": {
+                      "id": "i5fk4a"
+                    },
+                    "classes": [
+                      "silex-default-text"
+                    ],
+                    "components": [
+                      {
+                        "content": "FireTime Classic",
+                        "type": "textnode"
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "GLobal Update 1.1.0!",
+                        "type": "textnode"
+                      }
+                    ],
+                    "type": "text"
+                  }
+                ],
+                "selector": {
+                  "mainSelector": {
+                    "pseudoClass": null,
+                    "selectors": [
+                      {
+                        "active": false,
+                        "type": "id",
+                        "value": "iryntp"
+                      },
+                      {
+                        "active": false,
+                        "type": "class",
+                        "value": "silex-default-container"
+                      },
+                      {
+                        "active": true,
+                        "type": "class",
+                        "value": "firewood-glass"
+                      }
+                    ]
+                  }
+                },
+                "type": "container"
+              },
+              {
+                "attributes": {
+                  "id": "i7eqlm"
+                },
+                "classes": [
+                  "silex-default-text"
+                ],
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "content": "🔥 Готовится новое обновление FireTime Classic Global Update 1.1.0!",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "В этом обновлении была значительно улучшена система PGL, а также её внутренний компонент исправления ошибок — PGL Manager. Теперь он работает быстрее и эффективнее удаляет лишние постройки, деревья и другие объекты, которые могут вызывать проблемы при генерации мира.",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "Во время разработки я заметил, что некоторые сиды (Seed) вызывали повышенное количество ошибок и даже могли приводить к нестабильной работе игры. Чтобы решить эту проблему, в FireTime Classic была интегрирована новая система генерации PGL 7.0.",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "А теперь самое интересное — что нового ждёт игроков?",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "attributes": {
+                      "id": "i0ys71"
+                    },
+                    "components": [
+                      {
+                        "content": "Новый режим: «Прятки»\nСкрывайтесь от монстра и старайтесь выжить как можно дольше. Будьте осторожны: монстр отлично слышит звуки сбора древесины и может выйти прямо на ваш след. Режим всё ещё находится в разработке и будет активно улучшаться в будущих обновлениях.",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "Исправление ошибок\nВ игре было исправлено множество ошибок и недочётов. FireTime Classic стал стабильнее и работает лучше.",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "Новый загрузочный экран\nПри запуске игры теперь будет воспроизводиться новая анимация загрузки.",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "Новая настройка: «Анимации появления»\nВ игре появились анимации появления и исчезновения объектов. При желании эту функцию можно отключить в настройках.",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "Обратите внимание: функция находится на стадии тестирования. Если вы столкнётесь с ошибками или странным поведением объектов, пожалуйста, сообщите об этом.",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  },
+                  {
+                    "components": [
+                      {
+                        "content": "Спасибо всем, кто тестирует FireTime Classic и помогает делать игру лучше!",
+                        "type": "textnode"
+                      }
+                    ],
+                    "tagName": "p",
+                    "type": "text"
+                  }
+                ],
+                "type": "text"
+              }
+            ],
+            "selector": {
+              "mainSelector": {
+                "pseudoClass": null,
+                "selectors": [
+                  {
+                    "active": false,
+                    "type": "id",
+                    "value": "ikqwuh"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "silex-default-container"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "firewood-glass"
+                  },
+                  {
+                    "active": true,
+                    "type": "class",
+                    "value": "projects-container"
+                  }
+                ]
+              }
+            },
+            "type": "container"
+          }
+        ],
+        "docEl": {
+          "tagName": "html"
+        },
+        "head": {
+          "type": "head"
+        },
+        "publicStates": [],
+        "stylable": [
+          "background",
+          "background-color",
+          "background-image",
+          "background-repeat",
+          "background-attachment",
+          "background-position",
+          "background-size"
+        ],
+        "type": "wrapper"
+      },
+      "id": "Zn76LenEvBK9e3Cn"
+    }
+  ],
+  "id": "kjWKIP7xp9EDfW59T",
+  "name": "FireWoodStudioProjects"
+}

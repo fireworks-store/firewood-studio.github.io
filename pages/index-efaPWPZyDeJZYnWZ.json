@@ -35,132 +35,10 @@
             "components": [
               {
                 "attributes": {
-                  "id": "ijk0n",
+                  "id": "iwu7cx",
                   "src": "/assets/FireWoodStudio_site.png"
                 },
                 "type": "image"
-              },
-              {
-                "attributes": {
-                  "id": "in33v2"
-                },
-                "components": [
-                  {
-                    "attributes": {
-                      "id": "fw-test-menu"
-                    },
-                    "components": [
-                      {
-                        "attributes": {
-                          "id": "fw-test-button",
-                          "type": "button"
-                        },
-                        "components": [
-                          {
-                            "content": "☰",
-                            "type": "textnode"
-                          }
-                        ],
-                        "text": "☰",
-                        "type": "button"
-                      },
-                      {
-                        "attributes": {
-                          "id": "fw-test-panel"
-                        },
-                        "components": [
-                          {
-                            "attributes": {
-                              "id": "fw-test-close",
-                              "type": "button"
-                            },
-                            "components": [
-                              {
-                                "content": "×",
-                                "type": "textnode"
-                              }
-                            ],
-                            "text": "×",
-                            "type": "button"
-                          },
-                          {
-                            "components": [
-                              {
-                                "content": "FireWood Studio",
-                                "type": "textnode"
-                              }
-                            ],
-                            "tagName": "h2",
-                            "type": "text"
-                          },
-                          {
-                            "attributes": {
-                              "href": "#home"
-                            },
-                            "components": [
-                              {
-                                "content": "Home",
-                                "type": "textnode"
-                              }
-                            ],
-                            "type": "link"
-                          },
-                          {
-                            "attributes": {
-                              "href": "#games"
-                            },
-                            "components": [
-                              {
-                                "content": "Games",
-                                "type": "textnode"
-                              }
-                            ],
-                            "type": "link"
-                          },
-                          {
-                            "attributes": {
-                              "href": "#projects"
-                            },
-                            "components": [
-                              {
-                                "content": "Projects",
-                                "type": "textnode"
-                              }
-                            ],
-                            "type": "link"
-                          },
-                          {
-                            "attributes": {
-                              "href": "#about"
-                            },
-                            "components": [
-                              {
-                                "content": "About Us",
-                                "type": "textnode"
-                              }
-                            ],
-                            "type": "link"
-                          },
-                          {
-                            "attributes": {
-                              "href": "#contact"
-                            },
-                            "components": [
-                              {
-                                "content": "Contact",
-                                "type": "textnode"
-                              }
-                            ],
-                            "type": "link"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "custom-code-plugin__code": "\n<div id=\"fw-test-menu\">\n  <button id=\"fw-test-button\">☰</button>\n\n  <div id=\"fw-test-panel\">\n    <button id=\"fw-test-close\">×</button>\n    <h2>FireWood Studio</h2>\n    <a href=\"#home\">Home</a>\n    <a href=\"#games\">Games</a>\n    <a href=\"#projects\">Projects</a>\n    <a href=\"#about\">About Us</a>\n    <a href=\"#contact\">Contact</a>\n  </div>\n</div>\n\n<style>\n#fw-test-button {\n  position: fixed;\n  top: 20px;\n  right: 20px;\n  z-index: 999999;\n  background: #203c2b;\n  color: white;\n  border: 1px solid #75947c;\n  border-radius: 12px;\n  padding: 12px 17px;\n  font-size: 25px;\n  cursor: pointer;\n}\n\n#fw-test-panel {\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 280px;\n  height: 100vh;\n  box-sizing: border-box;\n  padding: 30px;\n  background: rgba(20, 40, 28, 0.96);\n  color: white;\n  z-index: 1000000;\n  transform: translateX(110%);\n  transition: transform .35s ease;\n}\n\n#fw-test-panel.open {\n  transform: translateX(0);\n}\n\n#fw-test-panel a {\n  display: block;\n  color: white;\n  text-decoration: none;\n  padding: 15px;\n  margin-top: 10px;\n  background: rgba(255,255,255,.1);\n  border-radius: 10px;\n}\n\n#fw-test-close {\n  float: right;\n  background: none;\n  border: none;\n  color: white;\n  font-size: 30px;\n  cursor: pointer;\n}\n</style>\n\n<script>\nconst fwButton = document.getElementById(\"fw-test-button\");\nconst fwPanel = document.getElementById(\"fw-test-panel\");\nconst fwClose = document.getElementById(\"fw-test-close\");\n\nfwButton.addEventListener(\"click\", () => {\n  fwPanel.classList.add(\"open\");\n});\n\nfwClose.addEventListener(\"click\", () => {\n  fwPanel.classList.remove(\"open\");\n});\n\nfwPanel.querySelectorAll(\"a\").forEach(link => {\n  link.addEventListener(\"click\", () => {\n    fwPanel.classList.remove(\"open\");\n  });\n});\n</script>\n",
-                "droppable": false,
-                "type": "custom-code"
               }
             ],
             "type": "container"
@@ -171,7 +49,8 @@
             },
             "classes": [
               "silex-default-container",
-              "firewood-glass"
+              "firewood-glass",
+              "projects-container"
             ],
             "components": [
               {
@@ -254,7 +133,7 @@
                 "pseudoClass": null,
                 "selectors": [
                   {
-                    "active": true,
+                    "active": false,
                     "type": "id",
                     "value": "i3czg"
                   },
@@ -267,6 +146,11 @@
                     "active": false,
                     "type": "class",
                     "value": "firewood-glass"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "projects-container"
                   }
                 ]
               }
@@ -281,9 +165,177 @@
             "type": "form"
           },
           {
+            "attributes": {
+              "id": "ikqwuh-2"
+            },
             "classes": [
-              "silex-default-container"
+              "silex-default-container",
+              "firewood-glass",
+              "projects-container"
             ],
+            "components": [
+              {
+                "attributes": {
+                  "href": "./firewoodstudioprojects.html",
+                  "id": "iryntp-3-2-2-2"
+                },
+                "classes": [
+                  "silex-default-container",
+                  "firewood-glass"
+                ],
+                "components": [
+                  {
+                    "attributes": {
+                      "id": "i5bdgc-2",
+                      "src": "/assets/FireTimeClassic03.webp"
+                    },
+                    "type": "image"
+                  },
+                  {
+                    "attributes": {
+                      "id": "ig9n18"
+                    },
+                    "classes": [
+                      "silex-default-text"
+                    ],
+                    "components": [
+                      {
+                        "content": "FireTime Classic",
+                        "type": "textnode"
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "GLobal Update 1.1.0!",
+                        "type": "textnode"
+                      }
+                    ],
+                    "type": "text"
+                  }
+                ],
+                "originalTagName": "div",
+                "selector": {
+                  "mainSelector": {
+                    "pseudoClass": null,
+                    "selectors": [
+                      {
+                        "active": false,
+                        "type": "id",
+                        "value": "iryntp"
+                      },
+                      {
+                        "active": false,
+                        "type": "class",
+                        "value": "silex-default-container"
+                      },
+                      {
+                        "active": true,
+                        "type": "class",
+                        "value": "firewood-glass"
+                      }
+                    ]
+                  }
+                },
+                "tagName": "A",
+                "type": "container"
+              },
+              {
+                "attributes": {
+                  "href": "./firewoodstudioprojects.html",
+                  "id": "iryntp-3-2-2-2-3"
+                },
+                "classes": [
+                  "silex-default-container",
+                  "firewood-glass"
+                ],
+                "components": [
+                  {
+                    "attributes": {
+                      "id": "i5bdgc-2-3",
+                      "src": "/assets/MapEditor1.0.1.webp"
+                    },
+                    "type": "image"
+                  },
+                  {
+                    "attributes": {
+                      "id": "ig9n18-2"
+                    },
+                    "classes": [
+                      "silex-default-text"
+                    ],
+                    "components": [
+                      {
+                        "content": "FireTime MapEditor",
+                        "type": "textnode"
+                      },
+                      {
+                        "tagName": "br",
+                        "void": true
+                      },
+                      {
+                        "content": "Beta Version",
+                        "type": "textnode"
+                      }
+                    ],
+                    "type": "text"
+                  }
+                ],
+                "originalTagName": "div",
+                "selector": {
+                  "mainSelector": {
+                    "pseudoClass": null,
+                    "selectors": [
+                      {
+                        "active": false,
+                        "type": "id",
+                        "value": "iryntp"
+                      },
+                      {
+                        "active": false,
+                        "type": "class",
+                        "value": "silex-default-container"
+                      },
+                      {
+                        "active": true,
+                        "type": "class",
+                        "value": "firewood-glass"
+                      }
+                    ]
+                  }
+                },
+                "tagName": "A",
+                "type": "container"
+              }
+            ],
+            "selector": {
+              "mainSelector": {
+                "pseudoClass": null,
+                "selectors": [
+                  {
+                    "active": false,
+                    "type": "id",
+                    "value": "ikqwuh"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "silex-default-container"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "firewood-glass"
+                  },
+                  {
+                    "active": true,
+                    "type": "class",
+                    "value": "projects-container"
+                  }
+                ]
+              }
+            },
             "type": "container"
           }
         ],

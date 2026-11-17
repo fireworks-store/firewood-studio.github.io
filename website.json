@@ -2,6 +2,27 @@
   "assets": [
     {
       "height": 0,
+      "src": "/assets/Снимок экрана 2026-11-16 213250.webp",
+      "type": "image",
+      "unitDim": "px",
+      "width": 0
+    },
+    {
+      "height": 0,
+      "src": "/assets/MapEditor1.0.1.webp",
+      "type": "image",
+      "unitDim": "px",
+      "width": 0
+    },
+    {
+      "height": 0,
+      "src": "/assets/FireTimeClassic03.webp",
+      "type": "image",
+      "unitDim": "px",
+      "width": 0
+    },
+    {
+      "height": 0,
       "src": "/assets/FireWoodStudioSite.png",
       "type": "image",
       "unitDim": "px",
@@ -33,12 +54,22 @@
     {
       "id": "efaPWPZyDeJZYnWZ",
       "isFile": true
+    },
+    {
+      "id": "kjWKIP7xp9EDfW59T",
+      "isFile": true,
+      "name": "FireWoodStudioProjects"
+    },
+    {
+      "id": "gm5jSF2DeeYDAwsKZE",
+      "isFile": true,
+      "name": "FireTimeMapEditor"
     }
   ],
   "pagesFolder": "pages",
   "publication": {},
   "settings": {
-    "head": "\n<style>\n\n\n.firewood-glass {\n    background: linear-gradient(\n        135deg,\n        rgba(220, 255, 230, 0.18),\n        rgba(100, 160, 120, 0.07)\n    );\n\n    border: 1px solid rgba(230, 255, 235, 0.35);\n    border-radius: 20px;\n\n    backdrop-filter: blur(25px) saturate(180%);\n    -webkit-backdrop-filter: blur(25px) saturate(180%);\n\n    box-shadow:\n        0 8px 35px rgba(0, 0, 0, 0.3),\n        inset 0 1px 2px rgba(255, 255, 255, 0.35);\n\n    padding: 25px;\n    color: white;\n}\n\n\n</style>\n"
+    "head": "\n<style>\n\n\n.firewood-glass {\n    background: linear-gradient(\n        135deg,\n        rgba(220, 255, 230, 0.18),\n        rgba(100, 160, 120, 0.07)\n    );\n\n    border: 1px solid rgba(230, 255, 235, 0.35);\n    border-radius: 20px;\n\n    backdrop-filter: blur(25px) saturate(180%);\n    -webkit-backdrop-filter: blur(25px) saturate(180%);\n\n    box-shadow:\n        0 8px 35px rgba(0, 0, 0, 0.3),\n        inset 0 1px 2px rgba(255, 255, 255, 0.35);\n\n    padding: 25px;\n    color: white;\n}\n \n  \n.projects-container {\n    width: 90%;\n    max-width: 1100px;\n    margin-left: auto;\n  \tmargin-right: auto;\n \tmargin-bottom: 49px;\n    padding-left: 49px;\n    padding-right: 49px;\n}\n\n  \n/* Плавное появление элементов сайта */\n@keyframes fadeInUp {\n    from {\n        opacity: 0;\n        transform: translateY(20px);\n    }\n    to {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\nbody * {\n    animation: fadeInUp 0.7s ease-out both;\n}\n\n  \n</style>\n"
   },
   "styles": [
     {
@@ -95,6 +126,7 @@
       ],
       "style": {
         "__background-type": "unset",
+        "align-items": "center",
         "background-attachment": "unset",
         "background-image": "unset",
         "background-image-color": "unset",
@@ -105,6 +137,7 @@
         "background-repeat": "unset",
         "background-size": "unset",
         "border-top-left-radius": "25px",
+        "display": "flex",
         "outline-color": "#000000"
       }
     },
@@ -123,20 +156,8 @@
         "background-image-gradient-type": "unset",
         "background-position": "unset",
         "background-repeat": "unset",
-        "background-size": "unset"
-      }
-    },
-    {
-      "selectors": [
-        "#ijk0n"
-      ],
-      "style": {
-        "align-content": "center",
-        "align-items": "center",
-        "border-top": "1 ridge",
-        "display": "flex",
-        "justify-content": "center",
-        "width": "830px"
+        "background-size": "unset",
+        "display": "flex"
       }
     },
     {
@@ -149,7 +170,10 @@
         "align-items": "center",
         "display": "flex",
         "justify-content": "center",
-        "position": "inherit"
+        "left": "0px",
+        "right": "0px",
+        "top": "0px",
+        "z-index": "9999"
       }
     },
     {
@@ -332,43 +356,6 @@
       }
     },
     {
-      "selectors": [
-        "#fw-test-button"
-      ],
-      "style": {
-        "background": "#203c2b",
-        "border": "1px solid #75947c",
-        "border-radius": "12px",
-        "color": "white",
-        "cursor": "pointer",
-        "font-size": "25px",
-        "padding": "12px 17px",
-        "position": "fixed",
-        "right": "20px",
-        "top": "20px",
-        "z-index": "999999"
-      }
-    },
-    {
-      "selectors": [
-        "#fw-test-panel"
-      ],
-      "style": {
-        "background": "rgba(20, 40, 28, 0.96)",
-        "box-sizing": "border-box",
-        "color": "white",
-        "height": "100vh",
-        "padding": "30px",
-        "position": "fixed",
-        "right": "0",
-        "top": "0",
-        "transform": "translateX(110%)",
-        "transition": "transform .35s ease",
-        "width": "280px",
-        "z-index": "1000000"
-      }
-    },
-    {
       "selectors": [],
       "selectorsAdd": "#fw-test-panel.open",
       "style": {
@@ -389,16 +376,153 @@
       }
     },
     {
+      "atRule": "",
       "selectors": [
-        "#fw-test-close"
+        "projects-container"
       ],
       "style": {
-        "background": "none",
-        "border": "none",
-        "color": "white",
-        "cursor": "pointer",
-        "float": "right",
-        "font-size": "30px"
+        "align-content": "center",
+        "align-items": "center",
+        "display": "flex",
+        "flex-direction": "row",
+        "flex-wrap": "wrap",
+        "font-family": "\"Press Start 2P\", sans-serif",
+        "justify-content": "center",
+        "margin-bottom": "114px"
+      }
+    },
+    {
+      "selectors": [
+        "#i5bdgc-2"
+      ],
+      "style": {
+        "border-bottom-left-radius": "15px",
+        "border-bottom-right-radius": "15px",
+        "border-top-left-radius": "15px",
+        "border-top-right-radius": "15px",
+        "box-shadow": "5px 0 56px 0 black ",
+        "height": "193px"
+      }
+    },
+    {
+      "atRule": "",
+      "selectors": [
+        "#ig9n18"
+      ],
+      "style": {
+        "align-self": "center",
+        "font-family": "\"Press Start 2P\", sans-serif",
+        "text-align": "center"
+      }
+    },
+    {
+      "selectors": [
+        "#iwu7cx"
+      ],
+      "style": {
+        "height": "169px",
+        "left": "0px",
+        "right": "0px",
+        "top": "0px",
+        "width": "1233px",
+        "z-index": "9999"
+      }
+    },
+    {
+      "selectors": [
+        "#i5bdgc-2-2"
+      ],
+      "style": {
+        "height": "193px"
+      }
+    },
+    {
+      "atRule": "",
+      "selectors": [
+        "#i5fk4a"
+      ],
+      "style": {
+        "align-self": "center",
+        "font-family": "\"Press Start 2P\", sans-serif",
+        "text-align": "center"
+      }
+    },
+    {
+      "atRule": "",
+      "selectors": [
+        "#i7eqlm"
+      ],
+      "style": {
+        "display": "flex",
+        "flex-direction": "column"
+      }
+    },
+    {
+      "selectors": [
+        "#i5bdgc-2-3"
+      ],
+      "style": {
+        "border-bottom-left-radius": "15px",
+        "border-bottom-right-radius": "15px",
+        "border-top-left-radius": "15px",
+        "border-top-right-radius": "15px",
+        "box-shadow": "5px 5px 56px 0px black ",
+        "height": "193px",
+        "width": "330px"
+      }
+    },
+    {
+      "atRule": "",
+      "selectors": [
+        "#ig9n18-2"
+      ],
+      "style": {
+        "align-self": "center",
+        "font-family": "\"Press Start 2P\", sans-serif",
+        "text-align": "center"
+      }
+    },
+    {
+      "selectors": [
+        "#i4h6j"
+      ],
+      "style": {
+        "border": "0px solid",
+        "border-bottom-left-radius": "49px",
+        "border-bottom-right-radius": "49px",
+        "border-top-left-radius": "49px",
+        "border-top-right-radius": "49px",
+        "box-shadow": "6px 0px 66px 19px black ",
+        "display": "flex",
+        "flex-direction": "column",
+        "height": "374px",
+        "width": "661px"
+      }
+    },
+    {
+      "selectors": [
+        "#ia9xo-2"
+      ],
+      "style": {
+        "border-bottom-left-radius": "15px",
+        "border-bottom-right-radius": "15px",
+        "border-top-left-radius": "15px",
+        "border-top-right-radius": "15px",
+        "display": "flex",
+        "flex-direction": "column",
+        "font-family": "\"Press Start 2P\", sans-serif",
+        "height": "336px",
+        "width": "607px"
+      }
+    },
+    {
+      "atRule": "",
+      "selectors": [
+        "#iufkn-2"
+      ],
+      "style": {
+        "display": "flex",
+        "font-family": "\"Press Start 2P\", sans-serif"
       }
     }
   ],

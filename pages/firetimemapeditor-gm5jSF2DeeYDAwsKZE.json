@@ -1,0 +1,122 @@
+{
+  "frames": [
+    {
+      "component": {
+        "COMPONENT_NAME_PREFIX": "",
+        "attributes": {
+          "id": "ihyjg"
+        },
+        "components": [
+          {
+            "attributes": {
+              "id": "ipvi5"
+            },
+            "classes": [
+              "silex-default-container",
+              "firewood-glass",
+              "projects-container"
+            ],
+            "components": [
+              {
+                "attributes": {
+                  "id": "i4h6j",
+                  "src": "/assets/MapEditor1.0.1.webp"
+                },
+                "type": "image"
+              }
+            ],
+            "selector": {
+              "mainSelector": {
+                "pseudoClass": null,
+                "selectors": [
+                  {
+                    "active": false,
+                    "type": "id",
+                    "value": "ipvi5"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "silex-default-container"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "firewood-glass"
+                  },
+                  {
+                    "active": true,
+                    "type": "class",
+                    "value": "projects-container"
+                  }
+                ]
+              }
+            },
+            "type": "container"
+          },
+          {
+            "attributes": {
+              "id": "iufkn-2"
+            },
+            "classes": [
+              "silex-default-container",
+              "firewood-glass"
+            ],
+            "components": [
+              {
+                "attributes": {
+                  "id": "ia9xo-2",
+                  "src": "/assets/Снимок экрана 2026-11-16 213250.webp"
+                },
+                "type": "image"
+              }
+            ],
+            "selector": {
+              "mainSelector": {
+                "pseudoClass": null,
+                "selectors": [
+                  {
+                    "active": true,
+                    "type": "id",
+                    "value": "iufkn"
+                  },
+                  {
+                    "active": false,
+                    "type": "class",
+                    "value": "silex-default-container"
+                  },
+                  {
+                    "active": true,
+                    "type": "class",
+                    "value": "firewood-glass"
+                  }
+                ]
+              }
+            },
+            "type": "container"
+          }
+        ],
+        "docEl": {
+          "tagName": "html"
+        },
+        "head": {
+          "type": "head"
+        },
+        "publicStates": [],
+        "stylable": [
+          "background",
+          "background-color",
+          "background-image",
+          "background-repeat",
+          "background-attachment",
+          "background-position",
+          "background-size"
+        ],
+        "type": "wrapper"
+      },
+      "id": "2yqGMsz56wH9Pdp2"
+    }
+  ],
+  "id": "gm5jSF2DeeYDAwsKZE",
+  "name": "FireTimeMapEditor"
+}

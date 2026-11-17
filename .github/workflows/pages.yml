@@ -34,6 +34,35 @@ jobs:
       - name: Build Silex website
         run: |
           sh build.sh
+
+      - name: Fix website paths
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          base = "/firewood-studio.github.io"
+
+          pattern = re.compile(
+              r'(?P<prefix>(?:href|src|poster|action)\s*=\s*["\']|url\(\s*["\']?)'
+              r'(?P<path>/(?!/)[^"\')\s]*)',
+              re.IGNORECASE
+          )
+
+          for file in Path("_site").rglob("*"):
+              if file.is_file() and file.suffix.lower() in (".html", ".css"):
+                  content = file.read_text(encoding="utf-8")
+                  fixed = pattern.sub(
+                      lambda m: m.group("prefix") + base + m.group("path"),
+                      content
+                  )
+
+                  if content != fixed:
+                      file.write_text(fixed, encoding="utf-8")
+                      print(f"Fixed: {file}")
+
+          PY
+
           touch _site/.nojekyll
 
       - name: Upload website
@@ -51,4 +80,3 @@ jobs:
       - name: Publish website
         id: deployment
         uses: actions/deploy-pages@v4
-

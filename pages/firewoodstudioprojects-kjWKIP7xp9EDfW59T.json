@@ -19,7 +19,7 @@
             "components": [
               {
                 "attributes": {
-                  "id": "iryntp-3-2-2-2-2"
+                  "id": "iryntp-3"
                 },
                 "classes": [
                   "silex-default-container",
@@ -59,12 +59,11 @@
                 ],
                 "selector": {
                   "mainSelector": {
-                    "pseudoClass": null,
                     "selectors": [
                       {
                         "active": false,
                         "type": "id",
-                        "value": "iryntp"
+                        "value": "iryntp-3-2-2-2-2"
                       },
                       {
                         "active": false,
@@ -72,9 +71,14 @@
                         "value": "silex-default-container"
                       },
                       {
-                        "active": true,
+                        "active": false,
                         "type": "class",
                         "value": "firewood-glass"
+                      },
+                      {
+                        "active": true,
+                        "type": "id",
+                        "value": "iryntp-3"
                       }
                     ]
                   }
@@ -90,9 +94,12 @@
                 ],
                 "components": [
                   {
+                    "attributes": {
+                      "id": "i5q9j"
+                    },
                     "components": [
                       {
-                        "content": "🔥 Готовится новое обновление FireTime Classic Global Update 1.1.0!",
+                        "content": "Готовится новое обновление FireTime Classic Global Update 1.1.0!",
                         "type": "textnode"
                       }
                     ],
@@ -100,6 +107,9 @@
                     "type": "text"
                   },
                   {
+                    "attributes": {
+                      "id": "it7lg"
+                    },
                     "components": [
                       {
                         "content": "В этом обновлении была значительно улучшена система PGL, а также её внутренний компонент исправления ошибок — PGL Manager. Теперь он работает быстрее и эффективнее удаляет лишние постройки, деревья и другие объекты, которые могут вызывать проблемы при генерации мира.",
@@ -110,6 +120,9 @@
                     "type": "text"
                   },
                   {
+                    "attributes": {
+                      "id": "ii2u7"
+                    },
                     "components": [
                       {
                         "content": "Во время разработки я заметил, что некоторые сиды (Seed) вызывали повышенное количество ошибок и даже могли приводить к нестабильной работе игры. Чтобы решить эту проблему, в FireTime Classic была интегрирована новая система генерации PGL 7.0.",
@@ -120,6 +133,9 @@
                     "type": "text"
                   },
                   {
+                    "attributes": {
+                      "id": "isk84"
+                    },
                     "components": [
                       {
                         "content": "А теперь самое интересное — что нового ждёт игроков?",
@@ -183,6 +199,9 @@
                     "type": "text"
                   },
                   {
+                    "attributes": {
+                      "id": "i6gxy"
+                    },
                     "components": [
                       {
                         "content": "Спасибо всем, кто тестирует FireTime Classic и помогает делать игру лучше!",

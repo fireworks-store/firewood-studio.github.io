@@ -39,13 +39,108 @@
                   "src": "/assets/FireWoodStudio_site.png"
                 },
                 "type": "image"
+              },
+              {
+                "attributes": {
+                  "id": "ivajh"
+                },
+                "components": [
+                  {
+                    "classes": [
+                      "fw-menu"
+                    ],
+                    "components": [
+                      {
+                        "attributes": {
+                          "aria-expanded": "false",
+                          "aria-label": "Open menu",
+                          "type": "button"
+                        },
+                        "classes": [
+                          "fw-menu-toggle"
+                        ],
+                        "components": [
+                          {
+                            "content": "Send",
+                            "type": "textnode"
+                          }
+                        ],
+                        "type": "button"
+                      },
+                      {
+                        "classes": [
+                          "fw-menu-panel"
+                        ],
+                        "components": [
+                          {
+                            "attributes": {
+                              "href": "/"
+                            },
+                            "components": [
+                              {
+                                "content": "Home",
+                                "type": "textnode"
+                              }
+                            ],
+                            "type": "link"
+                          },
+                          {
+                            "attributes": {
+                              "href": "/games/"
+                            },
+                            "components": [
+                              {
+                                "content": "Our Games",
+                                "type": "textnode"
+                              }
+                            ],
+                            "type": "link"
+                          },
+                          {
+                            "attributes": {
+                              "href": "/about/"
+                            },
+                            "components": [
+                              {
+                                "content": "About Us",
+                                "type": "textnode"
+                              }
+                            ],
+                            "type": "link"
+                          },
+                          {
+                            "attributes": {
+                              "href": "/contact/"
+                            },
+                            "components": [
+                              {
+                                "content": "Contact",
+                                "type": "textnode"
+                              }
+                            ],
+                            "type": "link"
+                          }
+                        ],
+                        "tagName": "nav"
+                      },
+                      {
+                        "classes": [
+                          "fw-menu-overlay"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "custom-code-plugin__code": "\n<div class=\"fw-menu\">\n  <button class=\"fw-menu-toggle\" aria-label=\"Open menu\" aria-expanded=\"false\">\n    <span></span>\n    <span></span>\n    <span></span>\n  </button>\n\n  <nav class=\"fw-menu-panel\">\n    <a href=\"/\">Home</a>\n    <a href=\"/games/\">Our Games</a>\n    <a href=\"/about/\">About Us</a>\n    <a href=\"/contact/\">Contact</a>\n  </nav>\n\n  <div class=\"fw-menu-overlay\"></div>\n</div>\n\n<style>\n.fw-menu {\n  position: relative;\n  z-index: 9999;\n  font-family: Arial, sans-serif;\n}\n\n.fw-menu-toggle {\n  position: relative;\n  z-index: 10002;\n  width: 48px;\n  height: 48px;\n  border: 0;\n  border-radius: 8px;\n  background: #171717;\n  cursor: pointer;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 6px;\n}\n\n.fw-menu-toggle span {\n  width: 23px;\n  height: 2px;\n  background: white;\n  transition: .3s;\n}\n\n.fw-menu-toggle.active span:nth-child(1) {\n  transform: translateY(8px) rotate(45deg);\n}\n\n.fw-menu-toggle.active span:nth-child(2) {\n  opacity: 0;\n}\n\n.fw-menu-toggle.active span:nth-child(3) {\n  transform: translateY(-8px) rotate(-45deg);\n}\n\n.fw-menu-panel {\n  position: fixed;\n  z-index: 10001;\n  top: 0;\n  right: 0;\n  width: 280px;\n  height: 100vh;\n  padding: 100px 25px 25px;\n  background: #171717;\n  display: flex;\n  flex-direction: column;\n  gap: 24px;\n  transform: translateX(100%);\n  transition: transform .35s ease;\n  box-sizing: border-box;\n}\n\n.fw-menu-panel.open {\n  transform: translateX(0);\n}\n\n.fw-menu-panel a {\n  color: white;\n  font-size: 18px;\n  text-decoration: none;\n}\n\n.fw-menu-panel a:hover {\n  color: #d69b55;\n}\n\n.fw-menu-overlay {\n  position: fixed;\n  z-index: 10000;\n  inset: 0;\n  background: rgba(0,0,0,.55);\n  opacity: 0;\n  visibility: hidden;\n  transition: .3s;\n}\n\n.fw-menu-overlay.open {\n  opacity: 1;\n  visibility: visible;\n}\n</style>\n\n<script>\n(function () {\n  const root = document.querySelector('.fw-menu');\n  if (!root || root.dataset.ready) return;\n  root.dataset.ready = 'true';\n\n  const button = root.querySelector('.fw-menu-toggle');\n  const panel = root.querySelector('.fw-menu-panel');\n  const overlay = root.querySelector('.fw-menu-overlay');\n\n  function toggleMenu(force) {\n    const open = force ?? !panel.classList.contains('open');\n    panel.classList.toggle('open', open);\n    overlay.classList.toggle('open', open);\n    button.classList.toggle('active', open);\n    button.setAttribute('aria-expanded', String(open));\n    button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');\n  }\n\n  button.addEventListener('click', () => toggleMenu());\n  overlay.addEventListener('click', () => toggleMenu(false));\n\n  panel.querySelectorAll('a').forEach(link => {\n    link.addEventListener('click', () => toggleMenu(false));\n  });\n\n  document.addEventListener('keydown', event => {\n    if (event.key === 'Escape') toggleMenu(false);\n  });\n})();\n</script>\n",
+                "droppable": false,
+                "type": "custom-code"
               }
             ],
             "type": "container"
           },
           {
             "attributes": {
-              "id": "iiff2u"
+              "id": "iiff2ug"
             },
             "classes": [
               "silex-default-container",
@@ -119,7 +214,6 @@
             ],
             "selector": {
               "mainSelector": {
-                "pseudoClass": null,
                 "selectors": [
                   {
                     "active": false,
@@ -137,9 +231,14 @@
                     "value": "firewood-glass"
                   },
                   {
-                    "active": true,
+                    "active": false,
                     "type": "class",
                     "value": "projects-container"
+                  },
+                  {
+                    "active": true,
+                    "type": "id",
+                    "value": "iiff2ug"
                   }
                 ]
               }
@@ -168,7 +267,7 @@
                 "components": [
                   {
                     "attributes": {
-                      "id": "imirni"
+                      "id": "newcontainer01"
                     },
                     "classes": [
                       "silex-default-container",
@@ -184,11 +283,11 @@
                       }
                     ],
                     "selector": {
+                      "atRule": "@media (max-width: 480px)",
                       "mainSelector": {
-                        "pseudoClass": null,
                         "selectors": [
                           {
-                            "active": true,
+                            "active": false,
                             "type": "id",
                             "value": "imirni"
                           },
@@ -198,9 +297,14 @@
                             "value": "silex-default-container"
                           },
                           {
-                            "active": true,
+                            "active": false,
                             "type": "class",
                             "value": "firewood-glass"
+                          },
+                          {
+                            "active": true,
+                            "type": "id",
+                            "value": "newcontainer01"
                           }
                         ]
                       }
@@ -325,13 +429,13 @@
                       }
                     ],
                     "selector": {
+                      "atRule": "@media (max-width: 480px)",
                       "mainSelector": {
-                        "pseudoClass": null,
                         "selectors": [
                           {
                             "active": true,
                             "type": "id",
-                            "value": "imirni"
+                            "value": "imirni-2"
                           },
                           {
                             "active": false,
@@ -339,7 +443,7 @@
                             "value": "silex-default-container"
                           },
                           {
-                            "active": true,
+                            "active": false,
                             "type": "class",
                             "value": "firewood-glass"
                           }

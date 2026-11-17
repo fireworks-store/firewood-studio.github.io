@@ -9,7 +9,7 @@
         "components": [
           {
             "attributes": {
-              "id": "ipvi5"
+              "id": "ipvi6"
             },
             "classes": [
               "silex-default-container",
@@ -22,12 +22,25 @@
                   "id": "i4h6j",
                   "src": "/assets/MapEditor1.0.1.webp"
                 },
+                "selector": {
+                  "atRule": "@media (max-width: 768px)",
+                  "mainSelector": {
+                    "pseudoClass": null,
+                    "selectors": [
+                      {
+                        "active": false,
+                        "type": "id",
+                        "value": "i4h6j"
+                      }
+                    ]
+                  }
+                },
                 "type": "image"
               }
             ],
             "selector": {
+              "atRule": "@media (max-width: 480px)",
               "mainSelector": {
-                "pseudoClass": null,
                 "selectors": [
                   {
                     "active": false,
@@ -45,9 +58,14 @@
                     "value": "firewood-glass"
                   },
                   {
-                    "active": true,
+                    "active": false,
                     "type": "class",
                     "value": "projects-container"
+                  },
+                  {
+                    "active": true,
+                    "type": "id",
+                    "value": "ipvi6"
                   }
                 ]
               }
@@ -56,11 +74,12 @@
           },
           {
             "attributes": {
-              "id": "iufkn-2"
+              "id": "iufkn-49"
             },
             "classes": [
               "silex-default-container",
-              "firewood-glass"
+              "firewood-glass",
+              "projects-container"
             ],
             "components": [
               {
@@ -72,13 +91,14 @@
               }
             ],
             "selector": {
+              "atRule": "@media (max-width: 480px)",
               "mainSelector": {
                 "pseudoClass": null,
                 "selectors": [
                   {
                     "active": true,
                     "type": "id",
-                    "value": "iufkn"
+                    "value": "iufkn-49"
                   },
                   {
                     "active": false,
@@ -86,9 +106,14 @@
                     "value": "silex-default-container"
                   },
                   {
-                    "active": true,
+                    "active": false,
                     "type": "class",
                     "value": "firewood-glass"
+                  },
+                  {
+                    "active": true,
+                    "type": "class",
+                    "value": "projects-container"
                   }
                 ]
               }

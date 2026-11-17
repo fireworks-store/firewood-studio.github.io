@@ -4,6 +4,7 @@
       "component": {
         "COMPONENT_NAME_PREFIX": "",
         "attributes": {
+          "href": "",
           "id": "i4mq2i"
         },
         "components": [
@@ -356,6 +357,7 @@
         "head": {
           "type": "head"
         },
+        "originalTagName": "body",
         "publicStates": [],
         "stylable": [
           "background",
